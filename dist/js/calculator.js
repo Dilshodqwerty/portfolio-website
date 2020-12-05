@@ -30,7 +30,6 @@ class HtmlElement {
     const element = document.createElement('div')
     element.classList.add('service')
     element.innerHTML = `<strong>${this.service}</strong> ${formatMoney(this.price)}`
-    console.log(element)
     return element
   }
 }

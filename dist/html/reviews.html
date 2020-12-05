@@ -24,8 +24,8 @@
           <li><a href="about.html">About</a></li>
           <li><a href="work.html">Work</a></li>
           <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="contact.html" class="current">Contact</a></li>
+          <li><a href="reviews.html" class="current">Reviews</a></li>
+          <li><a href="contact.html">Contact</a></li>
           <li><a href="../static/sample.pdf" title="Download My Resume" download><i
                 class="fas fa-download download-icon"></i></a>
         </ul>
@@ -33,52 +33,25 @@
     </div>
   </header>
 
-  <!-- Section A: Contact Form -->
-  <section id="contact-a" class="text-center py-3">
+  <!-- Section A: Reviews -->
+  <section id="reviews-a" class="py-2">
     <div class="container">
-      <h2 class="section-title">Contact Me</h2>
+      <h2 class="section-title">Reviews</h2>
       <div class="bottom-line"></div>
-      <p class="lead">Here is how you can reach me</p>
-      <form action="#" method="post">
-        <div class="text-fields">
-          <input type="text" class="text-input name-input" placeholder="Name">
-          <input type="text" class="text-input subject-input" placeholder="Subject">
-          <input type="email" class="text-input email-input" placeholder="Email Address">
-          <input type="text" class="text-input phone-input" placeholder="Phone Number">
-          <textarea class="text-input message-input" placeholder="Enter Message"></textarea>
+      <div class="main">
+        <p class="lead">Find Out What People Say About Me</p>
+        <div class="filter-container">
+          <input type="text" id="filter" class="filter" placeholder="Fiter posts...">
         </div>
-        <button type="submit" class="btn-dark">Submit</button>
-      </form>
-    </div>
-  </section>
+        <div id="post-container"></div>
 
-  <!-- Section B: Contact Info -->
-  <section id="contact-b" class="py-3 bg-dark">
-    <div class="container">
-      <div class="contact-info text-center">
-        <div>
-          <i class="fas fa-envelope fa-2x"></i>
-          <h3>Email</h3>
-          <p>john@something.com</p>
-        </div>
-        <div>
-          <i class="fas fa-phone fa-2x"></i>
-          <h3>Phone</h3>
-          <p>(555) 555-5555</p>
-        </div>
-        <div>
-          <i class="fas fa-address-card fa-2x"></i>
-          <h3>Address</h3>
-          <p>50 Main St, Boston MA</p>
+        <div class="loader">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Section C: Tagline -->
-  <section id="contact-c" class="bg-main text-center py-4">
-    <div class="container">
-      <h1>Let's Start Your Next Project</h1>
     </div>
   </section>
 
@@ -95,6 +68,7 @@
     </div>
   </footer>
 
+  <script src="../js/scroller.js"></script>
 </body>
 
 </html>

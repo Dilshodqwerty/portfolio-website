@@ -24,6 +24,7 @@
           <li><a href="about.html">About</a></li>
           <li><a href="work.html">Work</a></li>
           <li><a href="pricing.html" class="current">Pricing</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="../static/sample.pdf" title="Download My Resume" download><i
                 class="fas fa-download download-icon"></i></a>
@@ -38,20 +39,20 @@
       <h2 class="section-title">My Services</h2>
       <div class="bottom-line"></div>
       <p class="lead">Find Out How Much You Save By Hiring Me</p>
-      <div class="calculator">
+      <div class="table">
         <aside id="left-task-bar">
-          <button id="photography" title="Add Service">Photography 👨</button>
-          <button id="ui-design" title="Add Service">UI Design 🔖</button>
-          <button id="ux-design" title="Add Service">UX Design 📺</button>
-          <button id="web-design" title="Add Service">Web Design 🌐</button>
-          <button id="pro-advice" title="Add Service">Professional Advice 👋</button>
+          <button id="photography" class="btn-trigger" title="Add Service">Photography 👨</button>
+          <button id="ui-design" class="btn-trigger" title="Add Service">UI Design 🔖</button>
+          <button id="ux-design" class="btn-trigger" title="Add Service">UX Design 📺</button>
+          <button id="web-design" class="btn-trigger" title="Add Service">Web Design 🌐</button>
+          <button id="pro-advice" class="btn-trigger" title="Add Service">Professional Advice 👋</button>
         </aside>
         <main id="main">
           <h2><strong>Service</strong> Price</h2>
         </main>
         <aside id="right-task-bar">
-          <button id="calculate" title="Calculate Total Price">Calculate 📅</button>
-          <button id="clear" title="Clear the Table">Clear 🆑</button>
+          <button id="calculate" class="btn-trigger" title="Calculate Total Price">Calculate 📅</button>
+          <button id="clear" class="btn-trigger" title="Clear the Table">Clear 🆑</button>
         </aside>
       </div>
     </div>
@@ -70,7 +71,7 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="../js/calculator.js"></script>
 </body>
 
 </html>
