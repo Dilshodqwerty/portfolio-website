@@ -14,3 +14,26 @@ $bg-img: url("../img/showcase.jpg");
     @return #fff;
   }
 }
+
+// Scroll Bar
+
+// The emerging W3C standard that is currently Firefox-only
+* {
+  scrollbar-width: thin;
+  scrollbar-color: $main-color transparent;
+}
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: $medium-color;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $main-color;
+  border-radius: 30px;
+  border: 3px solid $main-color;
+}

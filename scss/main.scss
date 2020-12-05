@@ -1,6 +1,7 @@
 @import "config";
 @import "utilities";
 @import "item_grid";
+@import "pricing";
 
 // General styles
 * {
@@ -68,6 +69,11 @@ img {
 
     &.current {
       border-color: $main-color;
+    }
+
+    .download-icon {
+      line-height: 1rem;
+      font-size: 1.5rem;
     }
   }
 }
