@@ -3,6 +3,6 @@
 # for the rest
 /about/*        /about.html     200
 /contact/*      /contact.html   200
-​/pricing/*      /pricing.html   200
+/pricing/*      /pricing.html   200
 /reviews/*      /reviews.html   200
 /work/*         /work.html      200
