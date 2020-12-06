@@ -7,7 +7,7 @@
   width: 12px; }
 
 *::-webkit-scrollbar-track {
-  background: #ccc; }
+  background: transparent; }
 
 *::-webkit-scrollbar-thumb {
   background-color: #ffbc00;
@@ -438,9 +438,10 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-template-areas: 'name' 'email' 'subject' 'phone' 'message';
   grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin: 0 auto 1.2rem auto;
+  max-width: 50%; }
   #contact-a .text-fields .name-input {
     grid-area: name; }
   #contact-a .text-fields .subject-input {
@@ -468,7 +469,6 @@ img {
 #reviews-a .main {
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
   max-width: 100%;
   min-height: 100vh;

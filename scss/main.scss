@@ -396,11 +396,14 @@ img {
     .text-fields {
       display: grid;
       grid-template-areas: 
-        'name email'
-        'subject phone'
-        'message message';
+        'name'
+        'email'
+        'subject'
+        'phone'
+        'message';
       grid-gap: 1.2rem;
-      margin-bottom: 1.2rem;
+      margin: 0 auto 1.2rem auto;
+      max-width: 50%;
 
       // Grid Areas
       .name-input {
@@ -456,7 +459,7 @@ img {
     .main {
       display: flex;
       flex-flow: column;
-      justify-content: center;
+      // justify-content: center;
       align-items: center;
       max-width: 100%;
       min-height: 100vh;
