@@ -427,9 +427,6 @@ img {
         height: 100px;
       }
 
-      .text-input {
-        padding: 0.5rem 1rem;
-      }
     }
 
     button[type="submit"] {
@@ -478,14 +475,6 @@ img {
         width: 80vw;
         max-width: 800px;
         // position: fixed;
-
-        .filter {
-          width: 100%;
-          padding: 10px;
-          font-size: inherit;
-          font-family: inherit;
-          letter-spacing: 1.5px;
-        }
       }
 
       #post-container {
@@ -581,6 +570,7 @@ img {
     .social .fab {
       margin-right: 1rem;
       border: 2px solid #fff;
+      color: #fff;
       border-radius: 50%;
       height: 20px;
       width: 20px;

@@ -5,6 +5,8 @@ $light-color: #f4f4f4;
 $medium-color: #ccc;
 $dark-color: #333;
 $bg-img: url("../img/showcase.jpg");
+$success-color: #2ecc71;
+$error-color: #e74c3c;
 
 // Set Text Color
 @function set-text-color($color) {
