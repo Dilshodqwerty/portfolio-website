@@ -62,7 +62,7 @@ a[class^="btn-"]:hover {
   }
 }
 
-// Styling user inputs, textareas
+// Styling user inputs, textareas, form validation
 .input-text{
   border: 2px solid #f0f0f0;
   border-radius: 4px;
@@ -76,6 +76,14 @@ a[class^="btn-"]:hover {
   &:focus {
     outline: 0;
     border-color: $medium-color;
+  }
+
+  &.success {
+    border-color: $success-color;
+  }
+
+  &.error {
+    border-color: $error-color;
   }
 }
 

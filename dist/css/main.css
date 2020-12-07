@@ -74,6 +74,10 @@ a[class^="btn-"]:hover {
   .input-text:focus {
     outline: 0;
     border-color: #ccc; }
+  .input-text.success {
+    border-color: #2ecc71; }
+  .input-text.error {
+    border-color: #e74c3c; }
 
 .lead {
   font-size: 1.3rem;
@@ -451,7 +455,7 @@ img {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: 'name' 'email' 'subject' 'phone' 'message';
+  grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
   grid-gap: 1.2rem;
   margin: 0 auto 1.2rem auto;
   max-width: 50%; }
