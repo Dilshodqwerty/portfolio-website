@@ -1,3 +1,4 @@
+// Creating TypeWriter class to dynamically and infinitely edit text on home page
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;

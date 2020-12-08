@@ -20,10 +20,11 @@
   margin: auto;
   overflow: hidden; }
 
-.btn-main, .btn-light, .btn-dark {
+.btn-main, .btn-light, .btn-dark, #pricing-a .table .btn-trigger {
   display: inline-block;
   padding: 0.8rem 2rem;
   border: none;
+  outline: none;
   cursor: pointer;
   text-transform: uppercase;
   border-radius: 5px;
@@ -442,15 +443,9 @@ img {
       width: 250px;
       border-left: 1px solid #111; }
     #pricing-a .table .btn-trigger {
-      background: #fff;
       border: 1px solid #111;
-      border-radius: 5px;
-      cursor: pointer;
-      display: block;
       width: 100%;
-      padding: 10px;
       margin-bottom: 20px;
-      font-weight: bold;
       font-size: 14px; }
 
 #contact-a .text-fields {
@@ -586,6 +581,9 @@ img {
   #main-nav {
     flex-direction: column;
     align-items: center; }
+    #main-nav #logo {
+      align-self: start;
+      z-index: 100; }
     #main-nav li {
       padding: 1rem; }
   #header-home {
@@ -686,8 +684,8 @@ img {
     z-index: 1;
     width: 100vw;
     height: 100vh;
-    clip-path: circle(100px at 115% -15%);
-    -webkit-clip-path: circle(100px at 115% -15%);
+    clip-path: circle(100px at 120% -20%);
+    -webkit-clip-path: circle(100px at 120% -20%);
     transition: all 1s ease-out;
     pointer-events: none; }
     #header-home #main-nav .nav-links .download-icon, #header-inner #main-nav .nav-links .download-icon {
@@ -713,8 +711,8 @@ img {
     #header-home #main-nav .nav-links li.fade, #header-inner #main-nav .nav-links li.fade {
       opacity: 1; }
   #header-home #main-nav .nav-links.open, #header-inner #main-nav .nav-links.open {
-    clip-path: circle(1000px at 115% -15%);
-    -webkit-clip-path: circle(1000px at 115% -15%);
+    clip-path: circle(1000px at 120% -20%);
+    -webkit-clip-path: circle(1000px at 120% -20%);
     pointer-events: all; } }
 
 @media (max-height: 580px) {
@@ -723,7 +721,9 @@ img {
 
 @media (max-height: 330px) {
   #header-home .header-content h1 {
-    font-size: 2rem; } }
+    font-size: 2rem; }
+  #main-footer .social {
+    bottom: 10%; } }
 
 @keyframes bounce {
   0%, 100% {

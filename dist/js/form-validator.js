@@ -1,18 +1,18 @@
-// Initializing Vars
-const form = document.getElementById("form")
-const name = document.querySelectorAll(".input-text")[0]
-const subject = document.querySelectorAll(".input-text")[1]
-const email = document.querySelectorAll(".input-text")[2]
-const phone = document.querySelectorAll(".input-text")[3]
-const message = document.querySelectorAll(".input-text")[4]
+// Taking dom objects to manipulate
+const form = document.getElementById("form");
+const name = document.querySelectorAll(".input-text")[0];
+const subject = document.querySelectorAll(".input-text")[1];
+const email = document.querySelectorAll(".input-text")[2];
+const phone = document.querySelectorAll(".input-text")[3];
+const message = document.querySelectorAll(".input-text")[4];
 
 
 
-// Event Listeners
+// Adding event listener to the form
 form.addEventListener('submit', (e) => {
-  e.preventDefault()
+  e.preventDefault();
 
-  checkRequired([name, subject, email, phone, message])
+  checkRequired([name, subject, email, phone, message]);
 })
 
 // Functions
@@ -22,14 +22,14 @@ function checkRequired(inputArr) {
   inputArr.forEach(function(input) {
     if (input === email) {
       if (input.value.trim() === '') {
-        showError(input, `${getFieldName(input)} is required`)
+        showError(input, `${getFieldName(input)} is required`);
       } else {
-        checkEmail(email)
+        checkEmail(email);
       }
     } else if (input.value.trim() === '') {
-      showError(input, `${getFieldName(input)} is required`)
+      showError(input, `${getFieldName(input)} is required`);
     } else {
-      checkLength(input, 3, 35)
+      checkLength(input, 3, 35);
     }
   });
 }
@@ -69,17 +69,17 @@ function getFieldName(input) {
 // Show input error message
 function showError(input, message) {
   if (input.classList.contains('success')) {
-    input.classList.remove('success')
+    input.classList.remove('success');
   }
-  input.classList.add('error')
-  input.value = ''
-  input.setAttribute('Placeholder', message)
+  input.classList.add('error');
+  input.value = '';
+  input.setAttribute('Placeholder', message);
 }
 
 // Show success outline
 function showSuccess(input) {
   if (input.classList.contains('error')) {
-    input.classList.remove('error')
+    input.classList.remove('error');
   }
-  input.classList.add('success')
+  input.classList.add('success');
 }

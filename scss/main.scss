@@ -373,15 +373,10 @@ img {
       }
 
       .btn-trigger {
-        background: #fff;
+        @extend %btn-shared;
         border: 1px solid #111;
-        border-radius: 5px;
-        cursor: pointer;
-        display: block;
         width: 100%;
-        padding: 10px;
         margin-bottom: 20px;
-        font-weight: bold;
         font-size: 14px;
       }
 
