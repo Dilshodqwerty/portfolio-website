@@ -1,5 +1,5 @@
 // Tablets and Smaller
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   #header-home {
     height: 30rem;
 
@@ -7,10 +7,27 @@
       padding-top: 5rem;
     }
   }
+
+  // Footer
+  #main-footer {
+    .footer-content {
+      .info {
+        width: 50%;
+        
+        p:nth-of-type(2) {
+          line-height: 1rem;
+        }
+      }
+      
+      .social .fab {
+        margin: 0 3px;
+      }
+    }
+  }
 }
 
 // Smartphones
-@media (max-width: 575px) {    // changed from 500
+@media (max-width: 725px) {    // changed from 500, 575
   #main-nav {
     flex-direction: column;
     align-items: center;
@@ -83,22 +100,76 @@
     &-c {
       display: none;
     }
+
+    &-d {
+      .testimonials p {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  // Pricing Page
+  #pricing {
+    &-a {
+      .table {
+        padding: 0;
+        display: block;
+
+        aside {
+          display: inline-block;
+        }
+
+        #right-task-bar {
+          padding: 0;
+          border: none;
+        }
+
+        #right-task-bar{
+          padding: 0;
+        }
+
+        .btn-trigger {
+          width: 51%;
+          display: inline-block;
+        }
+
+        #main {
+          width: auto;
+        }
+      }
+    }
+  }
+
+  // Reviews Page
+  #reviews {
+    &-a {
+      .main {
+        padding-bottom: 0;
+
+        .loader {
+          position: fixed;
+          bottom: 300px;
+        }
+      }
+    }
   }
 
   // Contact
   #contact {
     &-a {
       .text-fields {
-        grid-template-areas:
-          'name'
-          'subject'
-          'email'
-          'phone'
-          'message';
-        & input,
-        & textarea {
-          margin-top: 0.8rem;  // added style
-        }
+        // grid-template-areas:
+        //   'name'
+        //   'subject'
+        //   'email'
+        //   'phone'
+        //   'message';
+        // & input,
+        // & textarea {
+        //   margin-top: 0.8rem;  // added style
+        // }
+
+        max-width: 100%;
       }
     }
 
@@ -117,6 +188,8 @@
     }
 
     &-c {
+      padding: 2rem 0;
+      
       h1 {
         font-size: 2rem;
       }
@@ -125,12 +198,108 @@
 
   // Footer
   #main-footer {
-    height: 7rem;
+    height: 17rem;
 
     .footer-content {
       flex-direction: column;
+      justify-content: space-around;
       padding: 1rem;
-      height: 5rem;
+      height: 17rem;
+      text-align: center;
+
+      .info {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+// Hamburger
+@media (max-width: 514px) {
+  #header-home, #header-inner {
+    .hamburger {
+      position: fixed;
+      right: 5%;
+      top: 2%;
+      transform: translate(-5%, -2%);
+      z-index: 2;
+
+      .line {
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin-top: 5px;
+        cursor: pointer;
+      }
+    }
+
+    #main-nav {
+      & .nav-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background: $main-color;
+        position: fixed;
+        top: 0;
+        z-index: 1;
+        width: 100vw;
+        height: 100vh;
+        clip-path: circle(100px at 115% -15%);
+        -webkit-clip-path: circle(100px at 115% -15%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+
+        .download-icon {
+          font-size: 2rem;
+        }
+
+        & li {
+          opacity: 0;
+
+          & a {
+            font-size: 2rem;
+          }
+        }
+
+        & li:nth-child(1){
+          transition: all 1s ease 0.2s;
+        }
+
+        & li:nth-child(2){
+          transition: all 1s ease 0.3s;
+        }
+
+        & li:nth-child(3){
+          transition: all 1s ease 0.4s;
+        }
+
+        & li:nth-child(4){
+          transition: all 1s ease 0.5s;
+        }
+
+        & li:nth-child(5){
+          transition: all 1s ease 0.6s;
+        }
+
+        & li:nth-child(6){
+          transition: all 1s ease 0.7s;
+        }
+
+        & li:nth-child(7){
+          transition: all 1s ease 0.8s;
+        }
+
+        & li.fade {
+          opacity: 1;
+        }
+      }
+
+      .nav-links.open {
+        clip-path: circle(1000px at 115% -15%);
+        -webkit-clip-path: circle(1000px at 115% -15%);
+        pointer-events: all;
+      }
     }
   }
 }

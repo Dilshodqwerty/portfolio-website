@@ -22,6 +22,16 @@ let counter3 = 0
 let counter4 = 0
 let counter5 = 0
 
+// Getting screen resolution
+const width  = window.innerWidth || document.documentElement.clientWidth || 
+document.body.clientWidth;
+const height = window.innerHeight|| document.documentElement.clientHeight|| 
+document.body.clientHeight;
+
+// Adding event listener
+window.addEventListener('scroll', scroller)
+
+// Functions
 function animate() {
   let increase = setInterval(() => {
     if (photography.style.width === dict.photography){
@@ -72,13 +82,26 @@ function animate() {
   }, 5)
 }
 
-window.addEventListener('scroll', scroller)
-
 function scroller() {
   const {scrollTop, scrollHeight, clientHeight} = document.documentElement
-//         472           418           1997          
-  if (scrollTop + clientHeight >= scrollHeight - 1107) {
-    animate()
-    window.removeEventListener('scroll', scroller)
+
+  if (width < 376) {
+    //    1000           812            3607
+    if (scrollTop + clientHeight >= scrollHeight - 1795) {
+      animate()
+      window.removeEventListener('scroll', scroller)
+    }
+  } else if (width < 576) {
+    //    1215          499            3308          
+    if (scrollTop + clientHeight >= scrollHeight - 1594) {
+      animate()
+      window.removeEventListener('scroll', scroller)
+    }
+  } else {
+    //     472           418           1997          
+    if (scrollTop + clientHeight >= scrollHeight - 1107) {
+      animate()
+      window.removeEventListener('scroll', scroller)
+    }
   }
 }

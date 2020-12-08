@@ -491,14 +491,18 @@ img {
           width: 80vw;
           max-width: 800px;
 
+          &-info {
+            margin-left: 20px;
+          }
+
+          &-title {
+            text-transform: lowercase;
+          }
+
           &-body {
             margin: 15px 0 0;
             line-height: 1.3;
             font-size: 1.2rem;
-          }
-
-          &-info {
-            margin-left: 20px;
           }
 
           .number {
@@ -582,6 +586,10 @@ img {
       &:hover {
         background: $main-color;
       }
+    }
+
+    .fa-twitter {
+      margin-left: 1rem;
     }
   }
 }
